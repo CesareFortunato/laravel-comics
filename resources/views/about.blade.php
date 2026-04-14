@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>about</title>
 </head>
 <body>
     @extends('layouts.master')
 
     @section('content')
-    <h1>Home</h1>
+    <h1>about</h1>
     @endsection
 </body>
 </html>
