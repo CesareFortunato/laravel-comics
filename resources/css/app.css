@@ -1,1 +1,15 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+.card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
