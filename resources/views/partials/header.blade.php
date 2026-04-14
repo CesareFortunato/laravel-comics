@@ -16,7 +16,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/comics">Comics</a>
+                        <a class="nav-link" href="/shop">Shop</a>
                     </li>
 
                     <li class="nav-item">

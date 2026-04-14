@@ -2,7 +2,9 @@
     <div class="card h-100">
 
         {{-- immagine --}}
-        <img src="{{ $comic['thumb'] }}" class="card-img-top" alt="{{ $comic['title'] }}">
+        <a href="{{ url('/comics/' . $loop->index) }}">
+            <img src="{{ $comic['thumb'] }}" class="card-img-top" alt="{{ $comic['title'] }}">
+        </a>
 
         <div class="card-body">
             <h5 class="card-title">{{ $comic['title'] }}</h5>

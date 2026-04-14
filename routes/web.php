@@ -7,9 +7,22 @@ Route::get('/', function () {
     return view('home', compact('comics'));
 })->name("home");
 
-Route::get('/comics', function () {
-    return view('comics');
+Route::get('/comics/{id}', function ($id) {
+
+    $comics = config('comics');
+    if (!isset($comics[$id])) {
+        abort(404);
+    }
+    $comic = $comics[$id];
+
+
+
+    return view('comics', compact('comic'));
 })->name("comics");
+
+Route::get('/shop', function () {
+    return view('shop');
+})->name("shop");
 
 
 Route::get('/about', function () {
